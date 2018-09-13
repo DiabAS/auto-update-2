@@ -15,12 +15,12 @@ function getInstallerConfig() {
 
     return Promise.resolve({
         appDirectory: path.join(rootPath, 'dist', 'package', 'megacam-win32-x64/'),
-        authors: 'ТОО MegaCam.kz',
+        authors: '_Di@bAS',
         noMsi: true,
         outputDirectory: path.join(rootPath, 'dist', 'squirrel-windows'),
-        exe: 'megacam.exe',
+        exe: 'application.exe',
         // setupExe: `megacam.Setup.${version}.exe`,
-        setupExe: `megacam Setup ${version}.exe`,
+        setupExe: `auto-update-2 Setup ${version}.exe`,
         setupIcon: path.join(rootPath, 'dist', 'assets', 'icon.ico')
     });
 }
