@@ -3,4 +3,5 @@ node_modules
 updates.json
 dist/squirrel-windows
 dist/win-unpacked
+dist/package
 package-lock.json

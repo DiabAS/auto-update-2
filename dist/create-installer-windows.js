@@ -14,7 +14,7 @@ function getInstallerConfig() {
     const rootPath = path.join('./');
 
     return Promise.resolve({
-        appDirectory: path.join(rootPath, 'dist', 'package', 'megacam-win32-x64/'),
+        appDirectory: path.join(rootPath, 'dist', 'package', 'auto-update-2-win32-x64/'),
         authors: '_Di@bAS',
         noMsi: true,
         outputDirectory: path.join(rootPath, 'dist', 'squirrel-windows'),
