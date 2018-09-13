@@ -1,0 +1,7 @@
+{
+  "win32-x64-prod": {
+    "update": "https://github.com/DiabAS/auto-update-2/releases/download/win32-x64-prod-v0.0.2",
+    "install": "https://github.com/DiabAS/auto-update-2/releases/download/win32-x64-prod-v0.0.2/auto-update-2.Setup.0.0.2.exe",
+    "version": "0.0.2"
+  }
+}
