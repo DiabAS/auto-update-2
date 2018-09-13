@@ -1,0 +1,43 @@
+{
+    "name": "auto-update-2",
+    "version": "0.0.1",
+    "description": "A minimal Electron application",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder",
+        "publish": "node_modules/.bin/publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DiabAS/auto-update-2.git"
+    },
+    "keywords": [
+        "Electron",
+        "quick",
+        "start",
+        "tutorial",
+        "demo"
+    ],
+    "author": "_Di@bAS",
+    "devDependencies": {
+        "electron": "^2.0.0",
+        "electron-builder": "^20.28.4",
+        "electron-builder-squirrel-windows": "^20.28.3",
+        "electron-simple-publisher": "^0.4.12"
+    },
+    "dependencies": {
+        "electron-simple-updater": "^1.2.4"
+    },
+    "build": {
+        "win": {
+            "target": "squirrel"
+        },
+        "squirrelWindows": {
+            "iconUrl": "https://raw.githubusercontent.com/DiabAS/auto-update/master/dist/assets/icon.ico"
+        }
+    },
+    "updater": {
+        "url": "https://raw.githubusercontent.com/DiabAS/auto-update/master/updates.json"
+    }
+}

@@ -1,0 +1,7 @@
+.idea
+node_modules
+publisher.json
+updates.json
+dist/squirrel-windows
+dist/win-unpacked
+package-lock.json

@@ -1,0 +1,8 @@
+directories:
+  output: dist
+  buildResources: build
+win:
+  target: squirrel
+squirrelWindows:
+  iconUrl: 'https://raw.githubusercontent.com/DiabAS/auto-update/master/dist/assets/icon.ico'
+electronVersion: 2.0.0
