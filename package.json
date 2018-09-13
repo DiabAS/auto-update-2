@@ -6,6 +6,9 @@
     "scripts": {
         "start": "electron .",
         "build": "electron-builder",
+        "pack:windows": "electron-packager . application --out=dist/package --icon=dist/assets/icon.ico --platform=win32 --arch=x64 --ignore=.idea --overwrite  --prune=true",
+        "create-installer:windows": "node dist/create-installer-windows.js",
+        "build:windows": "npm run pack:windows && npm run create-installer:windows",
         "publish": "node_modules/.bin/publish"
     },
     "repository": {
@@ -24,7 +27,9 @@
         "electron": "^2.0.0",
         "electron-builder": "^20.28.4",
         "electron-builder-squirrel-windows": "^20.28.3",
-        "electron-simple-publisher": "^0.4.12"
+        "electron-packager": "^12.1.2",
+        "electron-simple-publisher": "^0.4.12",
+        "electron-winstaller": "^2.6.4"
     },
     "dependencies": {
         "electron-simple-updater": "^1.2.4"
