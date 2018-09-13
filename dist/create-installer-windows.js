@@ -18,7 +18,7 @@ function getInstallerConfig() {
         authors: '_Di@bAS',
         noMsi: true,
         outputDirectory: path.join(rootPath, 'dist', 'squirrel-windows'),
-        exe: 'application.exe',
+        exe: 'auto-update-2.exe',
         // setupExe: `megacam.Setup.${version}.exe`,
         setupExe: `auto-update-2 Setup ${version}.exe`,
         setupIcon: path.join(rootPath, 'dist', 'assets', 'icon.ico')

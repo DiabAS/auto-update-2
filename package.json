@@ -6,7 +6,7 @@
     "scripts": {
         "start": "electron .",
         "build": "electron-builder",
-        "pack:windows": "electron-packager . application --out=dist/package --icon=dist/assets/icon.ico --platform=win32 --arch=x64 --ignore=.idea --overwrite  --prune=true",
+        "pack:windows": "electron-packager . auto-update-2 --out=dist/package --icon=dist/assets/icon.ico --platform=win32 --arch=x64 --ignore=.idea --overwrite  --prune=true",
         "create-installer:windows": "node dist/create-installer-windows.js",
         "build:windows": "npm run pack:windows && npm run create-installer:windows",
         "publish": "node_modules/.bin/publish"
